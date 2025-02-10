@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Employees</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Email</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="employee : ${employeeList}">
+                <td th:text="${employee.empId}"></td>
+                <td th:text="${employee.empName}"></td>
+                <td th:text="${employee.empEmail}"></td>
+                <td th:text="${employee.empLocation}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/index">Back to Employee Form</a>
+</body>
+</html>

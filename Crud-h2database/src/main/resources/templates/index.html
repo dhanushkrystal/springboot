@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <form action="/submitEmployee" method="POST">
+        <label for="empId">Employee ID:</label><br>
+        <input type="number" id="empId" name="empId" required><br><br>
+
+        <label for="empName">Employee Name:</label><br>
+        <input type="text" id="empName" name="empName" required><br><br>
+
+        <label for="empEmail">Employee Email:</label><br>
+        <input type="email" id="empEmail" name="empEmail" required><br><br>
+
+        <label for="empLocation">Location:</label><br>
+        <input type="text" id="empLocation" name="empLocation" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
